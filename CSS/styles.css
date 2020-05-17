@@ -1,14 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 
-#flex_container {
-    justify-content: center;
-    background-color: #C3CAFD;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-body {text-decoration: none;}
+body {text-decoration: none; background-color: #C3CAFD;}
 
 html, body {
     height: 100%;
@@ -18,7 +10,14 @@ html, body {
 #main_container {
     background-color: #FFF;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 100px auto;
+    height: 500px;
+}
+
+#main_container {
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 0px rgba(0, 0, 0, 0.4); /* Firefox 3.5 - 3.6 */
+  box-shadow:     3px 3px 5px 0px rgba(0, 0, 0, 0.4);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 #main_nav {
@@ -176,6 +175,9 @@ html, body {
 img.mySlides {
     max-width: 100%;
     max-height: 100%;
+    object-fit: cover !important;
+    width: 100%;
+    height: 100%;
 }
 
 #main_images {
